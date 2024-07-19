@@ -1,0 +1,74 @@
+.modal-overlay {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.login-modal-container {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  width: 450px;
+  font-size: 26px;
+}
+
+.modal-info {
+  color: #555;
+  font-size: 35px;
+  line-height: 1em;
+  font-weight: 300;
+  margin: 5px 0 10px;
+  text-align: center;
+}
+
+.modal-message {
+  color: #aaa;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 36px;
+  text-align: center;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.modal-close-button:hover {
+  background: var(--primary-color);
+}
+
+.modal-close-button .modal-close-sign {
+  width: 100%;
+  fill: var(--primary-color);
+}
+
+.modal-close-button:hover .modal-close-sign {
+  fill: var(--third-color);
+}

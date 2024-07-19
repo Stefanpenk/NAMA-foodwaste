@@ -1,0 +1,125 @@
+.admin-users-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-users-container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--primary-color);
+}
+
+.admin-users-user {
+  position: relative;
+  margin: calc(10% / 8);
+  padding: 20px;
+  width: calc(90% / 4);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color-transparent);
+  transition: 0.2s;
+  box-shadow: 0 0 10px 1px #ddd;
+}
+
+.admin-users-user:hover {
+  box-shadow: 0 0 10px 1px var(--primary-color);
+}
+
+.user-profile-container {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.user-profile-container svg {
+  width: 60%;
+  fill: var(--primary-color);
+}
+
+.user-name {
+  margin: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.user-username {
+  margin: 2px;
+  font-size: 15px;
+}
+.user-token {
+  margin: 5px;
+  padding: 5px 15px;
+  font-size: 15px;
+  background-color: var(--primary-color-transparent);
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.user-token:hover {
+  background-color: var(--primary-color);
+  color: var(--third-color);
+}
+
+.admin-users-response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1025px) {
+  .admin-users-container {
+    padding: 20px;
+  }
+
+  .admin-users-user {
+    margin: calc(10% / 6);
+    width: calc(90% / 3);
+  }
+
+  .user-profile-container svg {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-profile-container svg {
+    width: 70%;
+    height: 155px;
+  }
+
+  .admin-users-user {
+    margin: calc(10% / 4);
+    padding: 10px;
+    width: calc(90% / 2);
+  }
+}
+
+@media (max-width: 481px) {
+  .user-profile-container svg {
+    width: 100%;
+  }
+
+  .admin-users-user {
+    margin: calc(10% / 2);
+    width: 90%;
+  }
+}

@@ -1,0 +1,39 @@
+.oops-container {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.img-container {
+  width: 70%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.oops-header {
+  margin: 20px 0;
+  padding: 0 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.oops-text {
+  margin-top: 5px;
+  padding: 0 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.oops-img-author {
+  font-size: 10px;
+}

@@ -1,0 +1,87 @@
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+:root {
+  --primary-color: rgb(164, 176, 160);
+  --primary-color-transparent: rgba(164, 176, 160, 0.112);
+  --second-color: #111;
+  --third-color: #fff;
+  --vegan-color: #48823b;
+  --vegetarian-color: #48aaa0;
+  --glutenfree-color: #f1954a;
+  --diaryfree-color: #5ebce4;
+  --nav-bgc: rgba(0, 0, 0, 0.5);
+  --nav-link-color: #fff;
+  --nav-link-svg: hsl(105, 9%, 66%);
+
+  --nav-height: 90px;
+
+  --translate-star: 65%;
+
+  /* ABOUT */
+  --border-thickness: 2px;
+  --border-color: #555;
+
+  /* ADMIN */
+  --nav-button-width: 70px;
+  --nav-admin-margin: 20px;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+svg {
+  transition: 0.2s;
+}
+
+.nav-padding {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1025px) {
+  :root {
+    --nav-button-width: 60px;
+    --nav-admin-margin: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 70px;
+    --nav-button-width: 55px;
+  }
+}
